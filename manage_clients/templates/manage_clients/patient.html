@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'manage_clients/style.css' %}" />
+
+<div class="menu">
+<ul id="menu-primary-nav" class="menu depth-0">
+    <li id="menu-item-home" class="inactive-menu-item top-level">
+        <a class="inactive-menu-item-link top-level-link" href="/home/" title="Home">Home</a>
+    </li>
+    <li id="menu-item-all-our-psychologists" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/psychologist/" title="All our psychologists">All our psychologists</a>
+    </li>
+</ul>
+</div>
+
+<h1>Our clients and their stories</h1>
+<p>Below you can find some details about the <strong>patients</strong> who decided to come forward and disclose some of the details of their experience with mental illness and psychological treatment.</p>
+{% if patient %}
+    <ul>
+    {% for name in patient %}
+        <li><a href="/home/patient/{{name.id}}/">{{ name.name }}</a></li>
+{% endfor %}
+    </ul>
+{% else %}
+    <p>No patients willing to disclose</p>
+{% endif %}
+
+
+
+

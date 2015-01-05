@@ -1,0 +1,407 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"set",
+				"set_trace	function"
+			],
+			[
+				"deta",
+				"details"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"from",
+				"fromtimestamp"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/data/ga_data.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/locusts/appletv_short_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/psychology/psychology/urls.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/psychology/manage_clients/admin.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/psychology/manage_clients/models.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/psychology/psychology/settings.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/psychology/manage_clients/views.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/locusts/appletv_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/tasksets/firetv_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/locusts/firetv_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/locusts/roku_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/tasksets/appletv_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/tasksets/profileservices_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/recipes_project/recipes_project/urls.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/recipes_project/recipes_project/settings.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/psych/psych_client_app/models.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/myjungle/blog/models.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/myjungle/myjungle/settings.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/experiment/experiment/experiment/settings.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/experiment/experiment/psych/models.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/mysite/urls.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/polls/urls.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/polls/views.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/polls/models.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/polls/admin.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/polls/tests.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/polls/migrations/0001_initial.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/polls/admin.py,cover",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/locusts/android_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/locusts/profileservices_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/tasksets/roku_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/locustfile.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/locusts/profileservices_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/locustfile.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/tasksets/android_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/tasksets/profileservices_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/locusts/firetv_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/locusts/appletv_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/data/ga_data.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/locusts/roku_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/profile services endpoints",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/tasksets/firetv_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/__init__.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/tasksets/appletv_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/tasksets/roku_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/profile services id.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/content_services/locusts/android_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/mysite/settings.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/virtualenvs/locust/pbs-loads/pbsloads/lm_api/locusts/api_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/setup.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/setup.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/tests/integration/test_watchlist/test_watchlist.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/tests/integration/test_authorization/test_501_videoportal_collections.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/tests/integration/data/profile_service/program",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/tests/integration/data/cove/program",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/settings.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/dj_project/mysite/manage.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/think.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/Basic_Python_Ex/python-exercises/exercises-list.md",
+		"/home/3pillar.corp/sorina.negrila/Downloads/exwhat2.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/Basic_Python_Ex/python-exercises/sections/module_1.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/exwhat.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/PLP/PLP_6_exercises.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/Basic_Python_Ex/python-exercises/exercises.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/Basic_Python_Ex/python-exercises/tests.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/PLP/ex6plp.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/list2.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/sorina.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/tests/sanity/test_clients/android.txt",
+		"/home/3pillar.corp/sorina.negrila/Documents/PLP/ex1.py",
+		"/home/3pillar.corp/sorina.negrila/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/3pillar.corp/sorina.negrila/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/string1.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/string2.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/list1.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/babynames/baby2008.html",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/babynames/babynames.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/solution/wordcount.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/wordcount.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/mimic.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/solution/list2.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/solution/list1.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/google-python-exercises/basic/solution/string2.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/tests/sanity/test_sanity.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/android_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Documents/trials.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/tasksets/android_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/lists.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/monkey.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/puscate",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/setup.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/content_services/tasksets/__init__.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/pbs-loads/pbsloads/__init__.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/pbs-loads-master/content_services/tasksets/android_tasksets.py",
+		"/home/3pillar.corp/sorina.negrila/Downloads/pbs-loads-master/content_services/locusts/android_locusts.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidsxboxone_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/all_endpoints.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/collections/base.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/collections/featured.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/experiment.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/content-service/content_service/api/pages/base.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidsandroidtv_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidsfiretv_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidschromecast_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidswindows_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidsappletv_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidskindle_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidsios_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/kidsandroid_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/roku_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/chromecast_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/ios_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/appletv_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/videoportal_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/firetv_end.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/GA_valid_endpoints.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/endp.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/end_kids.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_test_api/videoportal_endpoints.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_andra/out.txt",
+		"/home/3pillar.corp/sorina.negrila/Documents/proiect/smoke_test_api/smoke_test_api.py",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_test_api/kids_specific_endpoints.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_test_api/urls.txt",
+		"/home/3pillar.corp/sorina.negrila/Documents/trying.py",
+		"/home/3pillar.corp/sorina.negrila/Documents/proiect/19_tests.txt",
+		"/home/3pillar.corp/sorina.negrila/Projects/smoke_test_api/smoke_test.log",
+		"/home/3pillar.corp/sorina.negrila/Documents/terminal comm",
+		"/home/3pillar.corp/sorina.negrila/Downloads/smoke_test_api/19_tests.txt"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"AppletvPrgr",
+			"video",
+			"featured",
+			"local",
+			"Feature",
+			"feature",
+			"TaskSet",
+			"FiretvPersAllPrgrPers",
+			"Appletv",
+			"AppletvScheduleProgram",
+			"class",
+			"PersonsAdmin",
+			"FavoriteVideos",
+			"polls_question",
+			"Firetv",
+			"FiretvPersonalisedHomeTaskSet",
+			"Firetv",
+			"FiretvHomeTaskSet",
+			"FiretvHome",
+			"appletv",
+			"Appletv",
+			"appletv",
+			"Appletv",
+			"appletv",
+			"Appletv",
+			"appletv",
+			"Appletv",
+			"appletv",
+			"Appletv",
+			"appletv",
+			"Appletv",
+			"appletv",
+			"Appletv",
+			"appletv",
+			"Appletv",
+			"appletv",
+			"Appletv",
+			"AppletvPrograms",
+			"AppletvProgramsSlug",
+			"AppletvProgramSlug",
+			"AppletvPrograms",
+			"AppletvProgramsTaskSet",
+			"latest_question_list",
+			"def",
+			"Question",
+			"LOADERS",
+			"result",
+			"FIRETV",
+			" \n",
+			"rulers",
+			"len_li",
+			"()\n",
+			"s",
+			"android program personalised end",
+			"programs/",
+			"programs",
+			"local-pr",
+			"status_codeclass",
+			"codeclass",
+			"sprint",
+			"search",
+			"AndroidSearchTaskSet",
+			"print",
+			"name",
+			"auth",
+			"self",
+			"response",
+			"max_wait",
+			"task_set",
+			"Collections",
+			"5000",
+			"TaskSet",
+			"min",
+			"ch",
+			"ERROR"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "admin.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

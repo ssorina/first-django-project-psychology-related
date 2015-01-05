@@ -1,0 +1,26 @@
+<div class="menu">
+<ul id="menu-primary-nav" class="menu depth-0">
+    <li id="menu-item-home" class="inactive-menu-item top-level">
+        <a class="inactive-menu-item-link top-level-link" href="/home/" title="Home">Home</a>
+    </li>
+    <li id="menu-item-all-our-psychologists" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/psychologist/" title="All our psychologists">All our psychologists</a>
+    </li>
+   <li id="menu-item-patient-experiences" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/patient/" title="Patient experiences">Patient experiences</a>
+    </li>
+</ul>
+</div>
+
+<h1> This is another single entry page than the original</h1>
+
+<form action="/home/upload/" method="POST">
+  {% csrf_token %}
+  <label for="title">Opinion title</label>
+  <input type="text" name="title" id="title" />
+  <label for="body_text" method="post" widget="forms.Textarea">Text of your opinion</label>
+  <input type="text" name="body_text" id="body_text">
+  <input type="submit" />
+</form>
+
+

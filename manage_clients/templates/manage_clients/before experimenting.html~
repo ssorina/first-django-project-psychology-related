@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+<li><a href="{% url 'home:index'%}"></a></li>
+
+
+    {% block title %} Psychologists inform{% endblock %}
+
+    {% block content %}
+        <h1> Psychologist's posts </h1>
+        {% for opinion in PsychOpinion %}
+        <div class="psych">
+            <h2>
+                <a href="{{PsychOpinion.get_absolute_url}}">
+                    {{PsychOpinion.title}}
+                </a>
+            </h2>
+            <p>{{PsychOpinion.body_text}}</p>
+            <p>
+                Posted on
+                <time datetime="{{PsychOpinion.pub_date|date:"c"}}">
+                #{{post.created|date}}
+                </time>
+            </p>
+        </div>
+        {% endfor %}
+    {% endblock %}
+
+
+For psychologist_special page, default:
+<a href="{{ psychologist.id }}/">{{ psychologist.psychologist_name }}</a>
+<h1>Psychologist's name: {{ psychologist.name }}</h1>
+<p>Session price: {{ psychologist.session_price }}</p>
+<p>Experience level: {{psychologist.experience_level}}</p>
+<p>Patients currently treating: {{patients}}</p>
+<p>Ages of current patients: {{age_details}}</p>
+<p>Mental health issues he/she treats: {{illness_details}}</p>
+<p>Next occupied timeslots: {{next_session_details}}</p>
+
+Next best:
+<a href="{{ psychologist.id }}/">{{ psychologist.psychologist_name }}</a>
+<h1>Psychologist's name: {{ psychologist.name }}</h1>
+<p>Session price: {{ psychologist.session_price }}</p>
+<p>Experience level: {{psychologist.experience_level}}</p>
+<p>Patients currently treating:</p>
+<ul>
+{% for name in patients %}
+    <li>{{name}}</li>
+{% endfor %}
+</ul>
+<p>Ages of current patients:</p>
+<ul>
+{% for age in age_details %}
+    <li>{{age}}</li>
+{% endfor %}
+</ul>
+<p>Mental health issues he/she treats: </p>
+<ul>
+{% for illness in illness_details %}
+    <li>{{illness}}</li>
+{% endfor %}
+</ul>
+<p>Next occupied timeslots:</p>
+<ul>
+{% for date in next_session_details %}
+    <li>{{date}}</li>
+{% endfor %}
+</ul>
+

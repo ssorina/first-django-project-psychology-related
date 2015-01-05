@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'manage_clients/style.css' %}" />
+
+<div class="menu">
+<ul id="menu-primary-nav" class="menu depth-0">
+    <li id="menu-item-home" class="inactive-menu-item top-level">
+        <a class="inactive-menu-item-link top-level-link" href="/home/" title="Home">Home</a>
+    </li>
+    <li id="menu-item-all-our-psychologists" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/psychologist/" title="All our psychologists">All our psychologists</a>
+    </li>
+    <li id="menu-item-patient-experiences" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/patient/" title="Patient experiences">Patient experiences</a>
+    </li>
+</ul>
+</div>
+
+<a href="{{ patient.id }}/">{{ patient.patient_name }}</a>
+<h1>Patient's name: {{ patient.name|upper}}</h1>
+
+<p style="font-family:verdana">Personal experience: {{patient.experience |linebreaks}}</p>
+
+<form action="/home/" method="post">
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name">
+    <input type="submit" value="OK">
+</form>
+<form action="/your-request/" method="post">
+    <label for="your_request">Ask whatever crosses your mind: </label>
+    <input id="your_request" type="text" name="your_request">
+    <input type="submit" value="ASK!">
+</form>

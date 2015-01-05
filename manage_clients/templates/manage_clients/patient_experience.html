@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'manage_clients/style.css' %}" />
+
+<div class="menu">
+<ul id="menu-primary-nav" class="menu depth-0">
+    <li id="menu-item-home" class="inactive-menu-item top-level">
+        <a class="inactive-menu-item-link top-level-link" href="/home/" title="Home">Home</a>
+    </li>
+    <li id="menu-item-all-our-psychologists" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/psychologist/" title="All our psychologists">All our psychologists</a>
+    </li>
+    <li id="menu-item-patient-experiences" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/patient/" title="Patient experiences">Patient experiences</a>
+    </li>
+</ul>
+</div>
+
+<a href="{{ patient.id }}/">{{ patient.patient_name }}</a>
+<h1>Patient's name: {{ patient.name|upper}}</h1>
+
+<p style="font-family:verdana">Personal experience: {{patient.experience |linebreaks}}</p>
+
+<form action="/patient_experience/" method="post">
+    {%csrf_token %}
+    {% for field in form %}
+        <div class='fieldWrapper'>
+            {{field}}{{field.label_tag}}
+        </div>
+    {% endfor %}
+    <input type="submit" value="Send" />
+</form>
+
+
+
+

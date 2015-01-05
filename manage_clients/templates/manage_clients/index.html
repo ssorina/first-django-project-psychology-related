@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'manage_clients/style.css' %}" />
+{% load treenav_tags %}
+{% show_treenav 'all-our-psychologists' full_tree=False %}
+<div class="menu">
+<ul id="menu-primary-nav" class="menu depth-0">
+    <li id="menu-item-home" class="inactive-menu-item top-level">
+        <a class="inactive-menu-item-link top-level-link" href="/home/" title="Home">Home</a>
+    </li>
+    <li id="menu-item-all-our-psychologists" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/psychologist/" title="All our psychologists">All our psychologists</a>
+    </li>
+   <li id="menu-item-patient-experiences" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/patient/" title="Patient experiences">Patient experiences</a>
+    </li>
+    <li id="menu-item-your-opinion-posted" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/upload/" title="Post your own opinion">Your opinion posted</a>
+    </li>
+</ul>
+</div>
+{% show_menu_crumbs "top-level-slug" %}
+<h1>Mental health issues explained:</h1>
+{% if latest_entries_list %}
+    <ul>
+    {% for title in latest_entries_list %}
+        <li><a href="/home/{{ title.id }}/">{{ title.title }}</a></li>
+{% endfor %}
+    </ul>
+{% else %}
+    <p>No posts are available.</p>
+{% endif %}
+
+<h3>Wanna submit your own article? We won't set any limit to this, so go ahead, <a href = "/home/upload">click here</a></h3>
+<p>Right after your submission you will see how the posted article will be dislayed on its separate page and appear on our homepage. Psychology is people's business, even if based in science</p>
+
+<h1>Our registered psychologists:</h1>
+{% if psychologists %}
+<ol>
+{% for name in psychologists %}
+<li><a href="/home/psychologist/{{ name.id }}/">{{ name }}</a></li>
+{% endfor %}
+</ol>
+{% else %}
+<p> Currently no available psychologists </p>
+{% endif %}
+
+<h3>Something you didn't find here? Need more details or some information? Contact us!</h3>
+<form action="/home/" method="post">
+    {%csrf_token %}
+    {% for field in form %}
+        <div class='fieldWrapper'>
+            {{field.label_tag}}{{field}}
+        </div>
+    {% endfor %}
+    <input type="submit" value="Send" />
+</form>
+
+

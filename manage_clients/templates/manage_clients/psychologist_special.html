@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'manage_clients/style.css' %}" />
+
+<div class="menu">
+<ul id="menu-primary-nav" class="menu depth-0">
+    <li id="menu-item-home" class="inactive-menu-item top-level">
+        <a class="inactive-menu-item-link top-level-link" href="/home/" title="Home">Home</a>
+    </li>
+    <li id="menu-item-all-our-psychologists" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/psychologist/" title="All our psychologists">All our psychologists</a>
+    </li>
+   <li id="menu-item-patient-experiences" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/patient/" title="Patient experiences">Patient experiences</a>
+    </li>
+</ul>
+</div>
+
+<a href="{{ psychologist.id }}/">{{ psychologist.psychologist_name }}</a>
+<h1>Psychologist's name: {{ psychologist.name|upper}}</h1>
+<p>Session price: {{ psychologist.session_price }}</p>
+<p>Experience level: {{psychologist.get_experience_level_display | capfirst}}</p>
+<p>Below you can find some details about the <strong>patients</strong> being treated by this psychologist, the occupied future <strong>timeslots</strong> and the <strong>illnesses</strong> he is most comfortable addressing</p>
+
+<table>
+   <tr>
+      <th>Patient name</th>
+      <th>Patient age</th>
+      <th>Illness</th>
+      <th>Next session</th>
+   </tr>
+{% for patient in patients %}
+   <tr>
+      <td>{{patient.name|upper}}</td>
+      <td>{{patient.age}}</td>
+      <td>{{patient.get_illness_display | capfirst}}</td>
+      <td>{{patient.next_session}}</td>
+   </tr>
+{% empty %}
+      <p>Sorry, no patients currently treated by this psychologist.</p>
+{% endfor %}
+</table>

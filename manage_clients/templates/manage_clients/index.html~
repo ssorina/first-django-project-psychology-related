@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'manage_clients/style.css' %}" />
+{% load treenav_tags %}
+{% show_treenav 'all-our-psychologists' full_tree=False %}
+<div class="menu">
+<ul id="menu-primary-nav" class="menu depth-0">
+    <li id="menu-item-home" class="inactive-menu-item top-level">
+        <a class="inactive-menu-item-link top-level-link" href="/home/" title="Home">Home</a>
+    </li>
+    <li id="menu-item-all-our-psychologists" class="active-menu-item top-level">
+        <a class="active-menu-item-link top-level-link" href="/home/psychologist/" title="All our psychologists">All our psychologists</a>
+    </li>
+</ul>
+</div>
+<h1>Mental health issues explained:</h1>
+{% if latest_entries_list %}
+    <ul>
+    {% for title in latest_entries_list %}
+        <li><a href="/home/{{ title.id }}/">{{ title.title }}</a></li>
+{% endfor %}
+    </ul>
+{% else %}
+    <p>No posts are available.</p>
+{% endif %}
+
+<h1>Our registered psychologists:</h1>
+{% if psychologists %}
+<ol>
+{% for name in psychologists %}
+<li><a href="/home/psychologist/{{ name.id }}/">{{ name }}</a></li>
+{% endfor %}
+</ol>
+{% else %}
+<p> Currently no available psychologists </p>
+{% endif %}
+
+
+
+

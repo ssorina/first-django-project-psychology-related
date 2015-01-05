@@ -1,0 +1,15 @@
+ {% extends 'base.html' %}
+ <li><a href="{% url 'home:archives' %}">{{ PsychOpinion.was_published_recently.title }}</a></li>   
+    {% block title %}<h1>This is a test title</h1>{% endblock %}
+     
+    {% block content %}
+    <article>
+        <header>
+            <h1> {{PsychOpinion.was_published_recently.title}} </h1>
+        </header>
+        <p class="content">
+            {{PsychOpinion.body_text}}
+        </p>
+        {{PsychOpinion.body_text}}
+    </article>
+    {% endblock %}
