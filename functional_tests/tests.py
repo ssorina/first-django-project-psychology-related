@@ -1,10 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-import unittest
+from django.test import LiveServerTestCase
+#import unittest
 
 
-class HomePageTest(unittest.TestCase):
+class HomePageTest(LiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -24,7 +25,8 @@ class HomePageTest(unittest.TestCase):
         self.assertIn('Home', menu)
 
     def test_message_form_on_page(self):
-        self.browser.get('http://127.0.0.1:8000/home/')
+        response = self.browser.get('http://127.0.0.1:8000/home/')
+        import pdb; pdb.set_trace()
         subject = self.browser.find_element_by_name('subject')
         subject.send_keys('Post')
 
@@ -34,6 +36,15 @@ class HomePageTest(unittest.TestCase):
         sender = self.browser.find_element_by_name('sender')
         sender.send_keys('test@test.com')
 
+        send = self.browser.find_element_by_xpath(
+            '/html/body/form/input[2]')
+        send.send_keys(Keys.ENTER)
 
-if __name__ == "__main__":
-    unittest.main()
+        #assert "Post" in response.page_source
+        self.assertRedirects(response, '/home/')
+
+
+
+
+#if __name__ == "__main__":
+#    unittest.main()
